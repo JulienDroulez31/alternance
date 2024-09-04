@@ -1,0 +1,11 @@
+name: test schedule
+on:
+  schedule:
+  - cron: "*/5 * * * *"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run
+        run: echo 'toto'
+   
